@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="css/main.css" >
+</head>
+
+<body>
+	<form class="dropdown" tabindex="1">
+		<ul>
+			<li>
+				<input type="radio" name="xname" value="1week" checked="checked">
+				<label>1 week</label>
+			</li>
+			<li>
+				<input type="radio" name="xname" value="spot">
+				<label>Spot</label>
+			</li>
+			<li>
+				<input type="radio" name="xname" value="3months">
+				<label>3 months</label>
+			</li>
+			<li>
+				<input type="radio" name="xname" value="6months">
+				<label>6 months</label>
+			</li>
+		</ul>
+	</form>
+<script type="text/javascript">
+document.querySelector("ul").addEventListener("click", function(e){
+	document.querySelector(".dropdown").blur();
+});
+</script>
+</body>
+</html>
